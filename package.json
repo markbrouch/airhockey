@@ -1,0 +1,33 @@
+{
+	"name": "airhockey",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"lerna": "lerna",
+		"precommit": "lint-staged",
+		"test": "xo"
+	},
+	"keywords": [],
+	"author": "Mark Brouch <mark.brouch@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"lerna": "^2.4.0"
+	},
+	"devDependencies": {
+		"husky": "^0.14.3",
+		"lint-staged": "^4.2.3",
+		"prettier": "^1.7.4",
+		"xo": "^0.18.2"
+	},
+	"lint-staged": {
+		"*.{js,json,css}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"prettier": {
+		"bracketSpacing": false,
+		"useTabs": true
+	}
+}
