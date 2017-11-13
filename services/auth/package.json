@@ -1,0 +1,20 @@
+{
+	"name": "auth",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "micro-dev",
+		"start": "micro"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@google-cloud/datastore": "^1.1.0",
+		"dotenv": "^4.0.0",
+		"invariant": "^2.2.2",
+		"micro": "^9.0.0",
+		"microauth-facebook": "^0.0.3"
+	},
+	"devDependencies": {
+		"micro-dev": "^1.2.3"
+	}
+}
