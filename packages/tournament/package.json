@@ -1,0 +1,61 @@
+{
+	"name": "@ah/tournament",
+	"version": "0.0.1",
+	"description": "Air Hockey Tournament",
+	"main": "server.js",
+	"author": "Mark Brouch<mark.brouch@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"precommit": "lint-staged",
+		"dev": "node server.js",
+		"build": "next build",
+		"start": "NODE_ENV=production node server.js",
+		"lint": "xo",
+		"test": "yarn run lint",
+		"now": "now"
+	},
+	"dependencies": {
+		"apollo-cache-inmemory": "^1.1.0",
+		"apollo-client": "^2.0.2",
+		"apollo-link-http": "^1.1.0",
+		"graphql": "^0.11.7",
+		"isomorphic-fetch": "^2.2.1",
+		"micro": "^9.0.1",
+		"micro-route": "^2.4.0",
+		"next": "^4.1.4",
+		"next-redux-wrapper": "^1.3.4",
+		"now-env": "^1.4.0",
+		"prop-types": "^15.6.0",
+		"react": "^16.1.0",
+		"react-apollo": "^2.0.1",
+		"react-dom": "^16.1.0",
+		"react-redux": "^5.0.6",
+		"redux": "^3.7.2",
+		"semantic-ui-react": "^0.76.0"
+	},
+	"devDependencies": {
+		"babel-plugin-module-resolver": "^3.0.0",
+		"babel-plugin-transform-inline-environment-variables": "^0.2.0",
+		"eslint-config-prettier": "^2.7.0",
+		"husky": "^0.14.3",
+		"lint-staged": "^4.3.0",
+		"micro-dev": "^1.4.0",
+		"now": "^8.4.0",
+		"prettier": "^1.8.2",
+		"webpack": "^3.8.1",
+		"xo": "^0.18.2"
+	},
+	"xo": {
+		"semicolon": false,
+		"ignores": [],
+		"extends": "prettier"
+	},
+	"lint-staged": {
+		"*.js": [
+			"yarn run lint",
+			"prettier --single-quote --no-semi --write",
+			"git add"
+		]
+	}
+}

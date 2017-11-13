@@ -1,0 +1,15 @@
+{
+	"presets": ["next/babel"],
+	"plugins": [
+		"transform-inline-environment-variables",
+		[
+			"module-resolver",
+			{
+				"root": ["./"],
+				"alias": {
+					"~": "./"
+				}
+			}
+		]
+	]
+}
