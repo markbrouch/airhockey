@@ -1,7 +1,7 @@
 {
 	"env": {
-		"FACEBOOK_ENDPOINT": "https://www.facebook.com/v2.11/dialog/oauth",
 		"FACEBOOK_APP_ID": "@FACEBOOK_APP_ID",
+		"FACEBOOK_APP_SECRET": "@FACEBOOK_APP_SECRET",
 		"FACEBOOK_REDIRECT_URI": "@FACEBOOK_REDIRECT_URI"
 	}
 }
