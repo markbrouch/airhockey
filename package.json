@@ -28,6 +28,8 @@
 	},
 	"prettier": {
 		"bracketSpacing": false,
+		"semi": false,
+		"singleQuote": true,
 		"useTabs": true
 	}
 }
