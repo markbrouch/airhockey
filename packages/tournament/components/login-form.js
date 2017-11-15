@@ -1,13 +1,13 @@
-import Router from "next/router";
-import {Grid, Header, Button, Icon} from "semantic-ui-react";
+import Router from 'next/router'
+import {Grid, Header, Button, Icon} from 'semantic-ui-react'
 
-const FACEBOOK_ENDPOINT = process.env.FACEBOOK_ENDPOINT;
-const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID;
-const FACEBOOK_REDIRECT_URI = process.env.FACEBOOK_REDIRECT_URI;
+const FACEBOOK_ENDPOINT = process.env.FACEBOOK_ENDPOINT
+const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID
+const FACEBOOK_REDIRECT_URI = process.env.FACEBOOK_REDIRECT_URI
 
 const loginFacebook = () => {
-	Router.push("/auth/facebook");
-};
+	Router.push('/auth/facebook')
+}
 
 const LoginForm = () => (
 	<div className="login-form">
@@ -15,7 +15,7 @@ const LoginForm = () => (
 			container
 			textAlign="center"
 			verticalAlign="middle"
-			style={{height: "100vh"}}
+			style={{height: '100vh'}}
 		>
 			<Grid.Column>
 				<Grid>
@@ -38,6 +38,6 @@ const LoginForm = () => (
 			</Grid.Column>
 		</Grid>
 	</div>
-);
+)
 
-export default LoginForm;
+export default LoginForm

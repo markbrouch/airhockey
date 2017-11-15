@@ -1,1 +1,1 @@
-const {microGraphiql, microGraphql} = require('apollo-server-micro');
+const {microGraphiql, microGraphql} = require('apollo-server-micro')
