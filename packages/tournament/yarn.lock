@@ -3705,9 +3705,9 @@ micro@^9.0.1:
     mri "1.1.0"
     raw-body "2.3.2"
 
-microauth-facebook@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/microauth-facebook/-/microauth-facebook-0.0.3.tgz#9991422650f7bfe6341f83f9b9768911d17d77f3"
+microauth-facebook@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/microauth-facebook/-/microauth-facebook-0.1.0.tgz#2266b7a50104e77044e60a916a41a3ffc27679ed"
   dependencies:
     micro-redirect "^1.0.0"
     request "^2.81.0"
